@@ -1,0 +1,10 @@
+nginx:
+    build: ./nginx
+    links:
+        - nodejs:nodejs
+    ports:
+        - "80:80"
+nodejs:
+    build: ./node
+    ports:
+        - "8080"

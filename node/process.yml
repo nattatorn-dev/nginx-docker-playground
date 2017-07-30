@@ -1,0 +1,5 @@
+apps:
+  - script   : './index.js'
+    name     : 'node-server'
+    exec_mode: 'cluster'
+    instances: 4
